@@ -168,6 +168,29 @@ if (Meteor.isServer) {
   console.log("Printed on the server");
 }
 					</code></pre>
+				
+				</section>
+
+				<section>
+					<h3>Special Directories</h3>
+					<ul>
+						<li>Client</li>
+						<li>Server</li>
+						<li>Public</li>
+						<li>Private</li>
+						<li>Tests</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>File Load Order</h3>
+					<ol>
+						<li>HTML template files are always loaded before everything else</li>
+						<li>Files beginning with main. are loaded last</li>
+						<li>Files inside any lib/ directory are loaded next</li>
+						<li>Files with deeper paths are loaded next</li>
+						<li>Files are then loaded in alphabetical order of the entire path</li>
+					</ol>
 				</section>
 
 				<section>
