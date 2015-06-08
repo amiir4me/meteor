@@ -153,22 +153,21 @@
 				</section>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+				<section>
+					<h3>Meteor Code</h3>
+					<pre><code data-trim contenteditable>
+if (Meteor.isClient) {
+  console.log("Printed in browsers and mobile apps");
+}
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+if (Meteor.isCordova) {
+  console.log("Printed only in mobile cordova apps");
+}
 
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+if (Meteor.isServer) {
+  console.log("Printed on the server");
+}
+					</code></pre>
 				</section>
 
 				<section>
