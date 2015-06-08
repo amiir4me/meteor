@@ -9,6 +9,10 @@ Meteor website:
 
 [https://www.meteor.com/](https://www.meteor.com/)
 
+Meteor manual:
+
+[http://manual.meteor.com/](http://manual.meteor.com/)
+
 Meteor packages:
 
 [https://atmospherejs.com/](https://atmospherejs.com/)
@@ -17,6 +21,6 @@ Best learning resources for Meteor:
 
 [https://www.yauh.de/best-learning-resources-for-meteorjs/](https://www.yauh.de/best-learning-resources-for-meteorjs/)
 
-Unofficial Meteor FAQ
+Unofficial Meteor FAQ:
 
 [https://github.com/oortcloud/unofficial-meteor-faq](https://github.com/oortcloud/unofficial-meteor-faq)
