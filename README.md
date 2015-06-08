@@ -16,3 +16,7 @@ Meteor packages:
 Best learning resources for Meteor:
 
 [https://www.yauh.de/best-learning-resources-for-meteorjs/](https://www.yauh.de/best-learning-resources-for-meteorjs/)
+
+Unofficial Meteor FAQ
+
+[https://github.com/oortcloud/unofficial-meteor-faq](https://github.com/oortcloud/unofficial-meteor-faq)
