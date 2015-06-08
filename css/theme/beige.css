@@ -42,18 +42,17 @@ body {
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 2.75em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.75em; }
 
 .reveal h3 {
-  font-size: 1.55em;
+  font-size: 1.25em;
   font-weight: 700; }
 
 .reveal h4 {
