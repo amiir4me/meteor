@@ -28,3 +28,7 @@ Best learning resources for Meteor:
 Unofficial Meteor FAQ:
 
 [https://github.com/oortcloud/unofficial-meteor-faq](https://github.com/oortcloud/unofficial-meteor-faq)
+
+Meteor Roadmap:
+
+[https://trello.com/b/hjBDflxp/meteor-roadmap](https://trello.com/b/hjBDflxp/meteor-roadmap)
