@@ -17,6 +17,10 @@ Meteor packages:
 
 [https://atmospherejs.com/](https://atmospherejs.com/)
 
+Meteor boilerplate:
+
+[https://github.com/matteodem/meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate)
+
 Best learning resources for Meteor:
 
 [https://www.yauh.de/best-learning-resources-for-meteorjs/](https://www.yauh.de/best-learning-resources-for-meteorjs/)
