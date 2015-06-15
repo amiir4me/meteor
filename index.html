@@ -155,6 +155,10 @@
 								<td>06.08</td>
 								<td>5688</td>
 							<tr>
+							<tr>
+								<td>06.15</td>
+								<td>5833</td>
+							<tr>
 						</tbody>
 					</table>
 				</section>
@@ -225,6 +229,18 @@ if (Meteor.isServer) {
 				<section>
 					<h3>MongoDB</h3>
 					<p>The Meteor team chose MongoDB as its datastore for its performance, scalability, and rich features for JSON.</p>
+				</section>
+
+				<section>
+					<h3>Server</h3>
+					<p>The server is a Node.js app built with certain libraries in place to make the communication happen over DDP and EJSON to the front-end:</p>
+					<ul>
+						<li>Node.js - A javascript server.</li>
+						<li>Connect - A library to output http responses from an app.</li>
+						<li>Database Driver (Mongo) - A simple drive to interface with MongoDB data.</li>
+						<li>Livequery - A library built to query and stream out Mongo data in a reactive way.</li>
+						<li>Fibers/Futures - A wrapper library for Node.js, making it synchronous in an effort to reduce 'callback spaghetti'.</li>
+					</ul>
 				</section>
 
 				<section id="transitions">
