@@ -44,6 +44,11 @@
 						</blockquote>
 					</section>
 					<section>
+						<blockquote cite="http://javascriptissexy.com/learn-meteor-js-properly/">
+							Written in JavaScript on the Node.js platform, Meteor is an open-source Isomorphic Development Ecosystem (IDevE) for efficiently and painlessly developing web and mobile applications. The Meteor ecosystem seamlessly integrates all the components (tools, libraries, databases, and frameworks [frontend and backend]) necessary for building and deploying applications.
+						</blockquote>
+					</section>
+					<section>
 						<h3>Meteor is 2 things:</h3>
 						<ol>
 							<li>
@@ -370,60 +375,81 @@ function linkify( selector ) {
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
+					<h3>Comprehensive and integrated ecosystem</h3>
+					<p>Meteor offers much more than just a front-end, a backend, or a combination of the two with some libraries. It offers everything you need to build web applications: a seamlessly integrated ecosystem that includes frameworks, libraries, database, tools, and more.</p>
 				</section>
 
 				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
+					<section>
+						<h3>What Specifically Does Meteor Offer Developers?</h3>
+						<p>1. Meteor not only has a one-step installation for configuration and setup, but it also has an isomorphic API, which refers to using the same code on the frontend or backend, or even for mobile and web apps. This saves developers hours, perhaps even days and weeks, since there is no need for developers to wrestle with installing, configuring, and learning disparate libraries, module managers, multifarious APIs, drivers, and the like.</p>
+					</section>
+					<section>
+						<p>2. It offers not only a front-end framework, like Backbone.js, but also a backend that seamlessly integrates with the frontend, and an easy-to-use API for communicating between the two; this provides developers with straightforward, no-fuss client-server data management (Collections, Models, etc.), server-side methods, and server session management. </p>
+					</section>
+					<section>
+						<p>3. It provides not only bidirectional persistent communication (like socket.io), but also simplified reactive programming (like Bacon.js). The reactive programming library works in conjunction with the front-end framework to reactively (that is, instantly and continuously) update the UI whenever dependable data or variables change. Moreover, a Meteor community developer has implemented the Meteor front-end templating engine on the server, providing server side templating for Meteor. I should caution that this implementation is still in its infancy.</p>
+					</section>
+					<section>
+						<p>4. It offers not only a stack that includes MongoDB database (with PostgreSQL and others planned), but also a front-end representation of MongoDB, called Minimongo, written entirely in JavaScript and available in every connected client. Meteor integrates the two (MongoDB on the backend and Minimongo on the frontend) in a well-conceived manner to mitigate latency, a concept called latency compensation. This results in considerably faster page updates and reloads, leading to a more satisfying user experience for developers and end users alike.</p>
+					</section>
+					<section>
+						<p>5. It not only has a standardized Mongo API on both the frontend and backend, but it also has Oplog tailing for MongoDB, resulting in applications using substantially less server resources.</p>
+					</section>
+					<section>
+						<p>6. It has a standard front-end router (created by a Meteor community member) that implements the best features from other popular front-end routers, and this router also provides server side routing and includes a familiar API like Express.js’s routing API, even allowing for connect middleware, RESTful endpoints, and the like.</p>
+					</section>
+					<section>
+						<p>7. It has a lightweight front-end framework, Blaze.js, that has a templating engine that supersedes Handlebars.js, with a rendering engine similar to the WIP (Work in Project) HTMLBars. I should note that Blaze is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</p>
+					</section>
+					<section>
+						<p>8. Its integrated live browser reload (also known as hot code load and hot code push) not only automatically reloads your live web page whenever you make development changes on the frontend (HTML, CSS, images, JavaScript, etc.), but it also automatically refreshes just the necessary DOM elements on the page (without reloading the entire page), even when there are dependent changes to data on the backend (MongoDB) or frontend (Minimongo).</p>
+					</section>
+					<section>
+						<p>9. It comes with requisite core packages to handle minification, preprocessing, concatenation, OAuth and custom user authentication (signup, login, forget password, etc.)., emailing, and coffeescripting; packages for popular frameworks like bootstrap, backbone, and jQuery; and even a package for SEO compatibility.</p>
+					</section>
+					<section>
+						<p>10. It has its own command line tool that provides many of the functionalities provided by tools such as grunt, NPM, NVM, and the like. And if you add EventedMind’s em5 scaffolding tool, you also have some (though not most) of the functionalities provided by popular scaffolding tools prominent in Rails and Yeoman.</p>
+					</section>
+					<section>
+						<p>11. It allows you to use NPM modules and it provides its own build system (a custom package manger) that transcends NPM, providing nearly all the worthwhile and crucial NPM functionalities and more. You can install third-party or custom Meteor packages from atmospherejs.com, the official repository for Meteor packages.</p>
+					</section>
+					<section>
+						<p>12. It uses synchronous style coding, courtesy of the Fibers JavaScript library. This provides an easy to read code structure that many find more appealing than the asynchronous structure of callback functions, common in most JavaScript frameworks. I should caution that you must pay close attention to the section in the road map that deals with making async calls in Meteor because many seem to have trouble when making async calls in Meteor.</p>
+					</section>
+					<section>
+						<p>13. It even provides support for mobile apps through Cordova Phonegap integration. You can easily deploy your Meteor app as a mobile app, using these simple commands:</p>
+						<ul>
+							<li>meteor run ios - runs your Meteor app in an iOS simulator and starts the server.</li>
+							<li>meteor run android - runs your Meteor app in an Android simulator and starts the server.</li>
+						</ul>
+					</section>
+					<section>
+						<p>14. Meteor takes a proactive approach to security, reportedly with a core developer dedicated to addressing security.</p>
+					</section>
+					<section>
+						<p>15. It has an official testing framework, Velocity,. With Velocity, you can use your favorite testing frameworks like Jasmine or Mocha, and run acceptance tests with Selenium. </p>
+					</section>
 				</section>
 
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<h3>FAQ</h3>
+					<p>Q: What kinds of applications can I not build with Meteor?</p>
+					<p> A: Sacha Greif, Coauthor of DiscoverMeteor.</p>
+					<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+					<h3>Known Meteor Limitations</h3>
+					<ul>
+						<li>It supports only one database: MongoDB. (PostgreSQL?)</li>
+						<li>It has no support for sharding on MongoDB.</li>
+						<li>Its frontend framework does not have reusable UI components.</li>
+						<li>It has only partial support for Redis.</li>
+						<li>It does not work well with SEO, even with its Spiderable hack.</li>
+						<li>Many [Atmospherejs.com, Meteor package management] packages don’t have the most vital information; the readme file for most packages is missing.</li>
+						<li>Its front-end framework, Blaze.js, is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</li>
+					</ul>
 				</section>
 
 				<section>
@@ -433,23 +459,9 @@ Reveal.addEventListener( 'customevent', function() {
 					</p>
 				</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
 				<section style="text-align: left;">
 					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<p>Questions?</p>
 				</section>
 
 			</div>

@@ -32,3 +32,7 @@ Unofficial Meteor FAQ:
 Meteor Roadmap:
 
 [https://trello.com/b/hjBDflxp/meteor-roadmap](https://trello.com/b/hjBDflxp/meteor-roadmap)
+
+Meteor news, updates, and blog posts from around the web:
+
+[https://crater.io/](https://crater.io/)
