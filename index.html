@@ -187,12 +187,25 @@ if (Meteor.isServer) {
 				</section>
 
 				<section>
-					<h3>Special Directories</h3>
-					<p>/Client</p>
-					<p>/Server</p>
-					<p>/Public</p>
-					<p>/Private</p>
-					<p>/Tests</p>
+					<section>
+						<h3>Default file loading</h3>
+						<p>If files are outside of the special directories listed below, Meteor does the following:</p>
+						<ol>
+							<li>HTML templates are compiled and sent to the client.</li>
+							<li>CSS files are sent to the client. In production mode they are automatically concatenated and minified.</li>
+							<li>JavaScript is loaded on the client and the server. You can use Meteor.isClient and Meteor.isServer to control where certain blocks of code run.</li>
+						</ol>
+						<p>If you want more control over which JavaScript code is loaded on the client and the server, you can use the special directories listed below.</p>
+					</section>
+					<section>
+						<h3>Special Directories</h3>
+						<p>Meteor is very flexible about how you structure the files in your app. It automatically loads all of your files, so there is no need to use &gt;script&lt; or &gt;link&lt; tags to include JavaScript or CSS.</p>
+						<p>/Client</p>
+						<p>/Server</p>
+						<p>/Public</p>
+						<p>/Private</p>
+						<p>/Tests</p>
+					</section>
 				</section>
 
 				<section>
