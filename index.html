@@ -237,6 +237,11 @@ if (Meteor.isServer) {
 				</section>
 
 				<section>
+					<h3>Robomongo - Shell-centric cross-platform MongoDB management tool</h3>
+					<img src="img/robomongo.png" alt="Robomongo">
+				</section>
+
+				<section>
 					<h3>Server</h3>
 					<p>The server is a Node.js app built with certain libraries in place to make the communication happen over DDP and EJSON to the front-end:</p>
 					<ul>
@@ -453,10 +458,48 @@ function linkify( selector ) {
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<h3>Event Loop and Node.js</h3>
+					<p>Meteor is built on top of Node.js, so we can’t forget the Event Loop. Node.js runs on a single thread, and thanks to the Event Loop and event-driven programming, program execution isn’t blocked by I/O activities (network and disk, mainly). Instead, we provide a callback function that is run after the I/O completes, and the rest of the program continues to run.</p>
+				</section>
+
+				<section>
+					<h3>Fibers</h3>
+					<p>Now you know how the Event Loop works, and how efficient it is. But there is a problem: Callbacks. Callbacks make Node.js code difficult to reason about (some describe it as callback soup). Error handling and nested callbacks are uncomfortable to write, and their existence makes code difficult to maintain and scale. That’s why some say Node.js is hard to learn (and use).</p>
+					<p>Meteor uses Fibers, and implements APIs on top of it.</p>
+				</section>
+
+				<section>
+					<p>Fibers provides an abstraction layer for the Event Loop that allows us to execute functions (tasks) in sequence. It allows us to write asynchronous code without callbacks. We get the best of both worlds–asynchronous efficiency with synchronous-style coding. Behind the scenes, Fibers takes care of dealing with the Event Loop. Fibers is really good if you use it correctly (Meteor does it well). Also, the overhead caused by Fibers is negligible.</p>
+				</section>
+
+				<section>
+					<h3>How Meteor Uses Fibers</h3>
+					<p>Meteor abstracts Fibers with its APIs, allowing you to write your app without callbacks. The best part is that you can write your code this way and be completely oblivious to Fibers. It just works.</p>
+				</section>
+
+				<section>
+					<p>Meteor creates a new Fiber for each and every request (DDP Request) made from the client. By default, Meteor executes one request at a time for each client, meaning one Fiber for each client at a time. But you can change that.</p>
+					<p>Fibers is the one of the best reasons Meteor is so popular. Since it allows us to write Node.js apps without callbacks, it has attracted many developers who hated Node.js for that reason.</p>
+				</section>
+
+				<section>
+					<h3>Meteor-npm</h3>
+					<p>With Meteor you only can use npm modules inside packages. You can't directly use npm modules with meteor apps. This package solves that issue :)</p>
+				</section>
+
+				<section>
+					<h3>DDP</h3>
+					<p>DDP is a protocol between a client and a server that supports two operations:</p>
+					<ul>
+						<li>Remote procedure calls by the client to the server.</li>
+						<li>The client subscribing to a set of documents, and the server keeping the client informed about the contents of those documents as they change over time.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>DDP</h3>
+					<p>A protocol for sending data over websockets. Dubbed 'REST for websockets'.</p>
+					<p>DDP messages are JSON objects, with some fields specified to be EJSON. Each one has a msg field that specifies the message type, as well as other fields depending on message type.</p>
 				</section>
 
 				<section style="text-align: left;">
