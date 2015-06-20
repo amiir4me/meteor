@@ -250,6 +250,19 @@ if (Meteor.isServer) {
 				</section>
 
 				<section>
+					<h3>Minimongo</h3>
+					<p>Database everywhere - simply put, Meteor will take a subset of your database and copy it to the client. This has two big implications:</p>
+					<ul>
+						<li>First, instead of sending HTML code to the client, a Meteor app will send the actual, raw data and let the client deal with it (data on the wire).</li>
+						<li>Second, you’ll be able to access that data instantaneously without having to wait for a round-trip to the server. And what’s even cooler is that Meteor will also do all the heavy lifting of keeping the client and server data in sync (latency compensation).</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/mongo.png" alt="MongoDB">
+				</section>
+
+				<section>
 					<h3>Robomongo - Shell-centric cross-platform MongoDB management tool</h3>
 					<img src="img/robomongo.png" alt="Robomongo">
 				</section>
