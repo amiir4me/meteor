@@ -276,6 +276,38 @@ if (Meteor.isServer) {
 				</section>
 
 				<section>
+					<section>
+						<h3>Meteor's Reactivity</h3>
+						<ul>
+							<li>Reactive Sources</li>
+							<li>Reactive Computations</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Reactive Sources</h3>
+						<ul>
+							<li>Session Variables - You can define Session variables with Session.set() and retrieve them with Session.get(), and any session variable will be both global to your whole app, and reactive.</li>
+							<li>Cursors - Cursors are what you get when you query your database with Collection.find(). They’re reactive, which is the reason why your app will change whenever the underlying data changes.</li>
+							<li>Subscription’s ready() Method - </li>
+							<li>When subscribing to a publication, it can be useful to know when the subscription is done loading (in other terms, when the client has safely received the data it requested). That’s where subscription.ready() comes in, and it too is reactive.</li>
+							<li>Other Reactive Sources - Meteor.user(), Meteor.userId(), Meteor.status, as well as Meteor.loggingIn.</li>
+							<li>ReactiveVar - The optional reactive-var package makes it possible to define your own, custom reactive variables.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Reactive Computations</h3>
+						<ul>
+							<li>Template Helpers - Template helpers (i.e. the {{variables}} you use inside templates) are themselves reactive computations. Any change to a reactive data source called from inside a helper will make the whole helper run again. </li>
+							<li>Reactive Routing - Although not strictly “default” since it’s a third-party package, it’s worth nothing that Iron Router hooks are also reactive. </li>
+							<li>Autorun: Custom Reactive Computations - Tracker.autorun() lets you define an arbitrary block of code that will run every time any one of its reactive sources change</li>
+						</ul>
+					</section>
+
+
+
+				</section>
+
+				<section>
 					<h3>Browser</h3>
 					<p>The browser part of the platform is sent over with minimal html and some javascript that loads up the environment. A lot of code is built on jQuery and underscore.js as the foundation. While the server is synchonous, browsers and javascript are asynchonous by nature. Let's look at the libraries that help make up the client and it's reactive nature:</p>
 					<ul>
