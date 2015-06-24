@@ -250,6 +250,12 @@ if (Meteor.isServer) {
 				</section>
 
 				<section>
+					<h3>Cursor</h3>
+					<p>A cursor is just a way of storing information about a query, controlling execution of the query, and controlling iteration over the result set.</p>
+					<p>If we call one of the iteration methods like fetch(), forEach() or map() on the cursor once the query is executed the results are cached.</p>
+				</section>
+
+				<section>
 					<h3>Minimongo</h3>
 					<p>Database everywhere - simply put, Meteor will take a subset of your database and copy it to the client. This has two big implications:</p>
 					<ul>
