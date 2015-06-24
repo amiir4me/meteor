@@ -385,6 +385,29 @@ setFavoriteFood("mangoes");
 				</section>
 
 				<section>
+					<section>
+						<h3>Meteor Isobuild</h3>
+						<p>Isobuild gathers all of the app's source files as well as any packages used by the app. It processes all of these inputs through the appropriate build phases for each target, such as transpiling, minifying, generating source maps, resolving package references, bundling assets, and so on.</p>
+						<p>Isobuild can use npm and PhoneGap packages.</p>
+					</section>
+					<section>
+						<p>The output of Isobuild is a set of runnable programs. For example, one simple Isobuild project could build into:</p>
+						<ul>
+							<li>A mobile app in iOS .ipa format for the Apple App Store, containing native iOS code.</li>
+							<li>A mobile app in Android .apk format for the Google Play store, containing native Android code</li>
+							<li>For a browser-based version of the app, a HTML5 resource bundle that can run in a browser and that targets HTML5 APIs</li>
+							<li>A Unix daemon that provides the app's trusted server-side services, in the form of a ready-to-run tarball, targeting a particular machine type such as Linux on 64-bit Intel</li>
+						</ul>
+					</section>
+					<section>
+						<p>Here's an example. Say you want to access a REST API, to retrieve Facebook friends for example. In the browser, you have to do that with XMLHttpRequest, or a wrapper around it such asjQuery.get(). Under node.js, you could use the core http.request() API or a wrapper such as the request package. Even though the browser code and the server code are both JavaScript, it's not portable, because the APIs are different. You'd have to maintain two different versions of the code for the two environments.</p>
+					</section>
+					<section>
+						<p>But with Meteor, you can add the http package and use the HTTP.get() function on both the browser and the server. It works everywhere, so now your Facebook friends-fetching code can be used anywhere in your app. That's the idea behind Isomorphic JavaScript. And, packages that other people build on top of your friend-fetching package will also work everywhere. Support for isomorphic APIs in Meteor extends from simple packages like 'http' all the way up to complete isomorphic database bindings, making it possible to run your app's core business and rendering logic on both the client and server.</p>
+					</section>
+				</section>
+
+				<section>
 					<h3>Packages</h3>
 					<p>I mentioned ISOBuild above, but I wanted to reiterate how much power can come from a package you add to Meteor.js. The package system has a few 'core' packages that can easily be added, like accounts-ui or accounts-google. These packages are little libraries built to take of things like login and authentication, oauth authorization, etc. You also have user created packages on Atmosphere, like iron:router, which has become the defacto router for 99% of all Meteor.js apps.</p>
 					<p>The fact that you can deliver small bits of functionality in a nicely encapsulated and automated fashion brings true power to this platform.</p>
@@ -519,6 +542,7 @@ setFavoriteFood("mangoes");
 					<ul>
 						<li>Remote procedure calls by the client to the server.</li>
 						<li>The client subscribing to a set of documents, and the server keeping the client informed about the contents of those documents as they change over time.</li>
+						<li>DDP messages are JSON objects, with some fields specified to be EJSON.</li>
 					</ul>
 				</section>
 
