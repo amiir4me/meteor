@@ -25,6 +25,10 @@ Best learning resources for Meteor:
 
 [https://www.yauh.de/best-learning-resources-for-meteorjs/](https://www.yauh.de/best-learning-resources-for-meteorjs/)
 
+Meteor.js Fundamentals for Single Page Applications (tutorial on Pluralsight):
+
+[http://www.pluralsight.com/courses/meteorjs-fundamentals-single-page-apps](http://www.pluralsight.com/courses/meteorjs-fundamentals-single-page-apps)
+
 Unofficial Meteor FAQ:
 
 [https://github.com/oortcloud/unofficial-meteor-faq](https://github.com/oortcloud/unofficial-meteor-faq)
