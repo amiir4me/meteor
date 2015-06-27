@@ -109,11 +109,14 @@ body {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
   background: rgba(255, 255, 255, 0.05); }
+
+.reveal blockquote footer {
+  text-align: right; }
 
 .reveal blockquote p:first-child, .reveal blockquote p:last-child {
   display: inline-block; }
@@ -182,6 +185,9 @@ body {
 .reveal small * {
   vertical-align: top; }
 
+.reveal .underline {
+  text-decoration: underline; }
+
 /*********************************************
  * LINKS
  *********************************************/
@@ -206,6 +212,9 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px; }
+
+.reveal section blockquote img {
+  margin: 0; }
 
 .reveal a img {
   -webkit-transition: all 0.15s linear;

@@ -136,12 +136,16 @@ font-weight: 700; }
 .reveal blockquote {
 	display: block;
 	position: relative;
-	width: 80%;
+	width: 90%;
 	margin: $blockMargin auto;
 	padding: 5px;
 
 	font-style: italic;
 	background: rgba(255, 255, 255, 0.05);
+}
+
+.reveal blockquote footer {
+	text-align: right;
 }
 	.reveal blockquote p:first-child,
 	.reveal blockquote p:last-child {
@@ -230,6 +234,10 @@ font-weight: 700; }
 	vertical-align: top;
 }
 
+.reveal .underline {
+	text-decoration: underline;
+}
+
 
 /*********************************************
  * LINKS
@@ -262,6 +270,10 @@ font-weight: 700; }
 
 .reveal section img {
 	margin: 15px 0px;
+}
+
+.reveal section blockquote img {
+	margin: 0;
 }
 
 	.reveal a img {
