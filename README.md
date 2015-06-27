@@ -17,6 +17,10 @@ Meteor packages:
 
 [https://atmospherejs.com/](https://atmospherejs.com/)
 
+MeteorPad is a Meteor code playground, similar to JSFiddle or CodePen:
+
+[http://meteorpad.com](http://meteorpad.com)
+
 Meteor boilerplate:
 
 [https://github.com/matteodem/meteor-boilerplate](https://github.com/matteodem/meteor-boilerplate)
