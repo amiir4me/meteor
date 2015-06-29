@@ -148,6 +148,26 @@
 				</section>
 
 				<section>
+					<h3>The MEAN Stack</h3>
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+						<li>Grunt or Gulp</li>
+						<li>Mongoose mongo driver</li>
+						<li>A pub/sub driver</li>
+						<li>Websocket (which one?)</li>
+						<li>Angular</li>
+						<li>Karma</li>
+						<li>account/oAuth libraries</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>What kinds of applications can I not build with Meteor?</h3>
+					<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
+				</section>
+
+				<section>
 					<h3>Hot Code Push</h3>
 					<p>When a new version of the app is deployed, client will be updated in place, including both browser and mobile clients. The client detects new versions by making a DDP subscription to the server to get the code version that the client is supposed to be using. This is implemented by the autoupdate package.</p>
 					<p>This package is the heart of Meteor's Hot Code Push functionality. It has a client component and a server component component. The client component uses a DDP API provided by the server to subscribe to the version ID of the most recent build of the app's client. When it sees that a new version is available, it uses the reload package to gracefully save the app's state and reload it in place.</p>
@@ -448,21 +468,6 @@ setFavoriteFood("mangoes");
 				</section>
 
 				<section>
-					<h3>Why building your own platform is a bad idea</h3>
-					<ul>
-						<li>Node.js</li>
-						<li>Express</li>
-						<li>Grunt or Gulp</li>
-						<li>Mongoose mongo driver</li>
-						<li>A pub/sub driver (I hear there is a decent redis one)</li>
-						<li>Websocket (which one?)</li>
-						<li>Angular</li>
-						<li>Karma</li>
-						<li>account/oAuth libraries</li>
-					</ul>
-				</section>
-
-				<section>
 					<h3>Comprehensive and integrated ecosystem</h3>
 					<p>Meteor offers much more than just a front-end, a backend, or a combination of the two with some libraries. It offers everything you need to build web applications: a seamlessly integrated ecosystem that includes frameworks, libraries, database, tools, and more.</p>
 				</section>
@@ -518,13 +523,6 @@ setFavoriteFood("mangoes");
 					<section>
 						<p>15. It has an official testing framework, Velocity,. With Velocity, you can use your favorite testing frameworks like Jasmine or Mocha, and run acceptance tests with Selenium. </p>
 					</section>
-				</section>
-
-				<section>
-					<h3>FAQ</h3>
-					<p>Q: What kinds of applications can I not build with Meteor?</p>
-					<p> A: Sacha Greif, Coauthor of DiscoverMeteor.</p>
-					<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
 				</section>
 
 				<section>
