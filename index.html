@@ -177,6 +177,49 @@
 						<h3>How Blaze Works</h3>
 						<img src="img/blaze.jpg" alt="Blaze">
 					</section>
+					<section>
+						<h3>Reactivity</h3>
+						<p>You can write your code in a simple imperative style, and the result will be automatically recalculated whenever data changes that your code depends on.</p>
+					</section>
+
+					<section>
+						<h3>Meteor's Reactivity</h3>
+						<ul>
+							<li>Reactive Sources</li>
+							<li>Reactive Computations</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Reactive Sources</h3>
+						<ul>
+							<li>Session Variables - You can define Session variables with Session.set() and retrieve them with Session.get(), and any session variable will be both global to your whole app, and reactive.</li>
+							<li>Cursors - Cursors are what you get when you query your database with Collection.find(). They’re reactive, which is the reason why your app will change whenever the underlying data changes.</li>
+							<li>Subscription’s ready() Method - </li>
+							<li>When subscribing to a publication, it can be useful to know when the subscription is done loading (in other terms, when the client has safely received the data it requested). That’s where subscription.ready() comes in, and it too is reactive.</li>
+							<li>Other Reactive Sources - Meteor.user(), Meteor.userId(), Meteor.status, as well as Meteor.loggingIn.</li>
+							<li>ReactiveVar - The optional reactive-var package makes it possible to define your own, custom reactive variables.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Reactive Computations</h3>
+						<ul>
+							<li>Template Helpers - Template helpers (i.e. the {{variables}} you use inside templates) are themselves reactive computations. Any change to a reactive data source called from inside a helper will make the whole helper run again. </li>
+							<li>Reactive Routing - Although not strictly “default” since it’s a third-party package, it’s worth nothing that Iron Router hooks are also reactive. </li>
+							<li>Autorun: Custom Reactive Computations - Tracker.autorun() lets you define an arbitrary block of code that will run every time any one of its reactive sources change</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Live HTML Templates</h3>
+						<p>Meteor makes it easy to use your favorite HTML templating language along with Meteor's live page update technology. Just write your template as you normally would, and Meteor will take care of making it update in realtime.<p>
+						<p>Meteor ships with a templating language called Spacebars, inspired by Handlebars. It shares some of the spirit and syntax of Handlebars, but it has been tailored to produce reactive Meteor templates when compiled.</p>
+					</section>
+
+					<section>
+						<h3>Latency Compensation - Optimistic UI</h3>
+						<img src="img/latency_compensation.png" alt="Latency Compensation">
+					</section>
+
 				</section>
 
 				<section>
@@ -200,32 +243,10 @@
 					</section>
 
 					<section>
-						<h3>DDP</h3>
-						<p>A protocol for sending data over websockets. Dubbed 'REST for websockets'.</p>
-						<p>DDP messages are JSON objects, with some fields specified to be EJSON. Each one has a msg field that specifies the message type, as well as other fields depending on message type.</p>
-					</section>
-
-					<section>
 						<h3>EJSON</h3>
 						<p>Meteor EJSON allows us to create custom types that are serialized and deserialized over the wire.</p>
 						<p>EJSON data types are automatically serialized and deserialized over the wire when using Meteor methods or subscriptions.</p>
 					</section>
-				</section>
-
-				<section>
-					<h3>Latency Compensation - Optimistic UI</h3>
-					<img src="img/latency_compensation.png" alt="Latency Compensation">
-				</section>
-
-				<section>
-					<h3>Reactivity</h3>
-					<p>You can write your code in a simple imperative style, and the result will be automatically recalculated whenever data changes that your code depends on.</p>
-				</section>
-
-				<section>
-					<h3>Live HTML Templates</h3>
-					<p>Meteor makes it easy to use your favorite HTML templating language along with Meteor's live page update technology. Just write your template as you normally would, and Meteor will take care of making it update in realtime.<p>
-					<p>Meteor ships with a templating language called Spacebars, inspired by Handlebars. It shares some of the spirit and syntax of Handlebars, but it has been tailored to produce reactive Meteor templates when compiled.</p>
 				</section>
 
 				<section>
@@ -369,34 +390,7 @@ setFavoriteFood("mangoes");
 					</code></pre>
 				</section>
 			</section>
-				<section>
-					<section>
-						<h3>Meteor's Reactivity</h3>
-						<ul>
-							<li>Reactive Sources</li>
-							<li>Reactive Computations</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Reactive Sources</h3>
-						<ul>
-							<li>Session Variables - You can define Session variables with Session.set() and retrieve them with Session.get(), and any session variable will be both global to your whole app, and reactive.</li>
-							<li>Cursors - Cursors are what you get when you query your database with Collection.find(). They’re reactive, which is the reason why your app will change whenever the underlying data changes.</li>
-							<li>Subscription’s ready() Method - </li>
-							<li>When subscribing to a publication, it can be useful to know when the subscription is done loading (in other terms, when the client has safely received the data it requested). That’s where subscription.ready() comes in, and it too is reactive.</li>
-							<li>Other Reactive Sources - Meteor.user(), Meteor.userId(), Meteor.status, as well as Meteor.loggingIn.</li>
-							<li>ReactiveVar - The optional reactive-var package makes it possible to define your own, custom reactive variables.</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Reactive Computations</h3>
-						<ul>
-							<li>Template Helpers - Template helpers (i.e. the {{variables}} you use inside templates) are themselves reactive computations. Any change to a reactive data source called from inside a helper will make the whole helper run again. </li>
-							<li>Reactive Routing - Although not strictly “default” since it’s a third-party package, it’s worth nothing that Iron Router hooks are also reactive. </li>
-							<li>Autorun: Custom Reactive Computations - Tracker.autorun() lets you define an arbitrary block of code that will run every time any one of its reactive sources change</li>
-						</ul>
-					</section>
-				</section>
+				
 				<section>
 					<section>
 						<h3>What Specifically Does Meteor Offer Developers?</h3>
@@ -451,21 +445,23 @@ setFavoriteFood("mangoes");
 				</section>
 
 				<section>
-					<h3>What kinds of applications can I not build with Meteor?</h3>
-					<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
-				</section>
+					<section>
+						<h3>Known Meteor Limitations</h3>
+						<ul>
+							<li>It supports only one database: MongoDB. (PostgreSQL?)</li>
+							<li>It has no support for sharding on MongoDB.</li>
+							<li>Its frontend framework does not have reusable UI components.</li>
+							<li>It has only partial support for Redis.</li>
+							<li>It does not work well with SEO, even with its Spiderable hack.</li>
+							<li>Many [Atmospherejs.com, Meteor package management] packages don’t have the most vital information; the readme file for most packages is missing.</li>
+							<li>Its front-end framework, Blaze.js, is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</li>
+						</ul>
+					</section>
 
-				<section>
-					<h3>Known Meteor Limitations</h3>
-					<ul>
-						<li>It supports only one database: MongoDB. (PostgreSQL?)</li>
-						<li>It has no support for sharding on MongoDB.</li>
-						<li>Its frontend framework does not have reusable UI components.</li>
-						<li>It has only partial support for Redis.</li>
-						<li>It does not work well with SEO, even with its Spiderable hack.</li>
-						<li>Many [Atmospherejs.com, Meteor package management] packages don’t have the most vital information; the readme file for most packages is missing.</li>
-						<li>Its front-end framework, Blaze.js, is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</li>
-					</ul>
+					<section>
+						<h3>What kinds of applications can I not build with Meteor?</h3>
+						<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
+					</section>
 				</section>
 
 				<section>
