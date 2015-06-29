@@ -55,10 +55,10 @@
 						<h3>Meteor is 2 things:</h3>
 						<ol>
 							<li>
-								<span class="underline">A library of packages</span>: pre-written, self-contained modules that you might need in your app.
+								<strong>A library of packages</strong>: pre-written, self-contained modules that you might need in your app.
 							</li>
 							<li>
-								<span class="underline">A command-line tool</span> called Meteor.
+								<strong>A command-line tool</strong> called Meteor.
 							</li>
 						</ol>
 					</section>
@@ -149,17 +149,17 @@
 
 				<section>
 					<h3>The MEAN Stack</h3>
-					<ul>
+					<ol>
 						<li>Node.js</li>
 						<li>Express</li>
 						<li>Grunt or Gulp</li>
-						<li>Mongoose mongo driver</li>
+						<li>Mongoose</li>
 						<li>A pub/sub driver</li>
 						<li>Websocket</li>
 						<li>Angular</li>
 						<li>Karma</li>
 						<li>account/oAuth libraries</li>
-					</ul>
+					</ol>
 				</section>
 
 				<section>
@@ -173,21 +173,8 @@
 							<li>Session - A library to handle reactive UI state variables.</li>
 						</ul>
 					</section>
-
-					<section>
-						<h3>Reactivity</h3>
-						<p>You can write your code in a simple imperative style, and the result will be automatically recalculated whenever data changes that your code depends on.</p>
-					</section>
-
-					<section>
-						<h3>Live HTML Templates</h3>
-						<p>Meteor makes it easy to use your favorite HTML templating language along with Meteor's live page update technology. Just write your template as you normally would, and Meteor will take care of making it update in realtime.<p>
-						<p>Meteor ships with a templating language called Spacebars, inspired by Handlebars. It shares some of the spirit and syntax of Handlebars, but it has been tailored to produce reactive Meteor templates when compiled.</p>
-					</section>
-
 					<section>
 						<h3>How Blaze Works</h3>
-						<p>Blaze is a reactive templating/DOM update library designed to work well with Tracker.</p>
 						<img src="img/blaze.jpg" alt="Blaze">
 					</section>
 				</section>
@@ -228,6 +215,17 @@
 				<section>
 					<h3>Latency Compensation - Optimistic UI</h3>
 					<img src="img/latency_compensation.png" alt="Latency Compensation">
+				</section>
+
+				<section>
+					<h3>Reactivity</h3>
+					<p>You can write your code in a simple imperative style, and the result will be automatically recalculated whenever data changes that your code depends on.</p>
+				</section>
+
+				<section>
+					<h3>Live HTML Templates</h3>
+					<p>Meteor makes it easy to use your favorite HTML templating language along with Meteor's live page update technology. Just write your template as you normally would, and Meteor will take care of making it update in realtime.<p>
+					<p>Meteor ships with a templating language called Spacebars, inspired by Handlebars. It shares some of the spirit and syntax of Handlebars, but it has been tailored to produce reactive Meteor templates when compiled.</p>
 				</section>
 
 				<section>
@@ -286,12 +284,6 @@
 							<li>For a browser-based version of the app, a HTML5 resource bundle that can run in a browser and that targets HTML5 APIs</li>
 							<li>A Unix daemon that provides the app's trusted server-side services, in the form of a ready-to-run tarball, targeting a particular machine type such as Linux on 64-bit Intel</li>
 						</ul>
-					</section>
-					<section>
-						<p>Here's an example. Say you want to access a REST API, to retrieve Facebook friends for example. In the browser, you have to do that with XMLHttpRequest, or a wrapper around it such asjQuery.get(). Under node.js, you could use the core http.request() API or a wrapper such as the request package. Even though the browser code and the server code are both JavaScript, it's not portable, because the APIs are different. You'd have to maintain two different versions of the code for the two environments.</p>
-					</section>
-					<section>
-						<p>But with Meteor, you can add the http package and use the HTTP.get() function on both the browser and the server. It works everywhere, so now your Facebook friends-fetching code can be used anywhere in your app. That's the idea behind Isomorphic JavaScript. And, packages that other people build on top of your friend-fetching package will also work everywhere. Support for isomorphic APIs in Meteor extends from simple packages like 'http' all the way up to complete isomorphic database bindings, making it possible to run your app's core business and rendering logic on both the client and server.</p>
 					</section>
 					<section>
 						<h3>Cordova</h3>
