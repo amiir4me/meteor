@@ -315,36 +315,15 @@
 
 			<section>
 				<section>
-					<h3>File Load Order</h3>
-					<ol>
-						<li>HTML template files are always loaded before everything else</li>
-						<li>Files beginning with main. are loaded last</li>
-						<li>Files inside any lib/ directory are loaded next</li>
-						<li>Files with deeper paths are loaded next</li>
-						<li>Files are then loaded in alphabetical order of the entire path</li>
-					</ol>
-				</section>
-				<section>
 					<h3>Default file loading</h3>
-					<p>If files are outside of the special directories listed below, Meteor does the following:</p>
 					<ol>
 						<li>HTML templates are compiled and sent to the client.</li>
 						<li>CSS files are sent to the client. In production mode they are automatically concatenated and minified.</li>
-						<li>JavaScript is loaded on the client and the server. You can use Meteor.isClient and Meteor.isServer to control where certain blocks of code run.</li>
+						<li>JavaScript is loaded on the client and the server.</li>
 					</ol>
-					<p>If you want more control over which JavaScript code is loaded on the client and the server, you can use the special directories listed below.</p>
 				</section>
 				<section>
-					<h3>Special Directories</h3>
-					<p>Meteor is very flexible about how you structure the files in your app. It automatically loads all of your files, so there is no need to use &gt;script&lt; or &gt;link&lt; tags to include JavaScript or CSS.</p>
-					<p>/Client</p>
-					<p>/Server</p>
-					<p>/Public</p>
-					<p>/Private</p>
-					<p>/Tests</p>
-				</section>
-				<section>
-					<h3>Meteor Code</h3>
+					<p>You can use Meteor.isClient and Meteor.isServer to control where certain blocks of code run.</p>
 					<pre><code data-trim contenteditable>
 if (Meteor.isClient) {
   console.log("Printed in browsers and mobile apps");
@@ -359,35 +338,6 @@ if (Meteor.isServer) {
 }
 					</code></pre>
 				
-				</section>
-
-				<section>
-					<h3>Meteor Tracker</h3>
-					<pre><code data-trim contenteditable>
-var favoriteFood = "apples";
-var favoriteFoodDep = new Tracker.Dependency;
-
-var getFavoriteFood = function () {
-  favoriteFoodDep.depend();
-  return favoriteFood;
-};
-
-var setFavoriteFood = function (newValue) {
-  favoriteFood = newValue;
-  favoriteFoodDep.changed();
-};
-
-getFavoriteFood();
-// "apples"
-
-var handle = Tracker.autorun(function () {
-  console.log("Your favorite food is " + getFavoriteFood());
-});
-// "Your favorite food is apples"
-
-setFavoriteFood("mangoes");
-// "Your favorite food is mangoes"
-					</code></pre>
 				</section>
 			</section>
 				
@@ -428,19 +378,21 @@ setFavoriteFood("mangoes");
 					<section>
 						<h3>Known Meteor Limitations</h3>
 						<ul>
-							<li>It supports only one database: MongoDB. (PostgreSQL?)</li>
-							<li>It has no support for sharding on MongoDB.</li>
+							<li>It supports only one database: MongoDB.</li>
 							<li>Its frontend framework does not have reusable UI components.</li>
-							<li>It has only partial support for Redis.</li>
 							<li>It does not work well with SEO, even with its Spiderable hack.</li>
-							<li>Many [Atmospherejs.com, Meteor package management] packages don’t have the most vital information; the readme file for most packages is missing.</li>
+							<li>Many Atmospherejs packages don’t have the most vital information.</li>
 							<li>Its front-end framework, Blaze.js, is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</li>
 						</ul>
 					</section>
 
 					<section>
 						<h3>What kinds of applications can I not build with Meteor?</h3>
-						<p>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites. As a general rule, Meteor is great for apps, but not for sites. Another factor to consider is the fact that Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</p>
+						<ul>
+							<li>Meteor isn’t great for anything that’s mainly static content, like blogs or simple static sites.</li>
+							<li>As a general rule, Meteor is great for apps, but not for sites.</li>
+							<li>Meteor doesn’t do server-side content generation yet, meaning that your app won’t work without JavaScript enabled.</li>
+						</ul>
 					</section>
 				</section>
 
