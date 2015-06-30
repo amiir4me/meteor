@@ -252,7 +252,6 @@
 				<section>
 					<section>
 						<h3>Server</h3>
-						<p>The server is a Node.js app built with certain libraries in place to make the communication happen over DDP and EJSON to the front-end:</p>
 						<ul>
 							<li>Node.js - A javascript server.</li>
 							<li>Connect - A library to output http responses from an app.</li>
@@ -267,17 +266,10 @@
 					</section>
 
 					<section>
-						<h3>Cursor</h3>
-						<p>A cursor is just a way of storing information about a query, controlling execution of the query, and controlling iteration over the result set.</p>
-						<p>If we call one of the iteration methods like fetch(), forEach() or map() on the cursor once the query is executed the results are cached.</p>
-					</section>
-
-					<section>
 						<h3>Minimongo</h3>
-						<p>Database everywhere - simply put, Meteor will take a subset of your database and copy it to the client. This has two big implications:</p>
 						<ul>
-							<li>First, instead of sending HTML code to the client, a Meteor app will send the actual, raw data and let the client deal with it (data on the wire).</li>
-							<li>Second, you’ll be able to access that data instantaneously without having to wait for a round-trip to the server. And what’s even cooler is that Meteor will also do all the heavy lifting of keeping the client and server data in sync (latency compensation).</li>
+							<li>Instead of sending HTML code to the client, a Meteor app will send the actual, raw data and let the client deal with it (data on the wire).</li>
+							<li>Access that data instantaneously without having to wait for a round-trip to the server.</li>
 						</ul>
 					</section>
 
@@ -292,25 +284,12 @@
 				</section>
 
 				<section>
-					<section>
-						<h3>Meteor Isobuild</h3>
-						<p>Isobuild gathers all of the app's source files as well as any packages used by the app. It processes all of these inputs through the appropriate build phases for each target, such as transpiling, minifying, generating source maps, resolving package references, bundling assets, and so on.</p>
-						<p>Isobuild can use npm and PhoneGap packages.</p>
-					</section>
-					<section>
-						<p>The output of Isobuild is a set of runnable programs. For example, one simple Isobuild project could build into:</p>
-						<ul>
-							<li>A mobile app in iOS .ipa format for the Apple App Store, containing native iOS code.</li>
-							<li>A mobile app in Android .apk format for the Google Play store, containing native Android code</li>
-							<li>For a browser-based version of the app, a HTML5 resource bundle that can run in a browser and that targets HTML5 APIs</li>
-							<li>A Unix daemon that provides the app's trusted server-side services, in the form of a ready-to-run tarball, targeting a particular machine type such as Linux on 64-bit Intel</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Cordova</h3>
-						<p>The Cordova integration is built into the command line tool and the package system. A simple meteor add-platform ios will get you started. The cordova app will be compiled into an app, but the hot code reload will bring over new code and cache it on the local device and load that next time instead.</p>
-						<p>The Cordova interface is just built upon the same libraries as the browser, listed above.</p>
-					</section>
+					<h3>Meteor Isobuild</h3>
+					<ul>
+						<li>A mobile app in iOS .ipa format for the Apple App Store, containing native iOS code.</li>
+						<li>A mobile app in Android .apk format for the Google Play store, containing native Android code</li>
+						<li>For a browser-based version of the app, a HTML5 resource bundle that can run in a browser and that targets HTML5 APIs</li>
+					</ul>
 				</section>
 
 			<section>
