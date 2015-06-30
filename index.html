@@ -394,53 +394,33 @@ setFavoriteFood("mangoes");
 				<section>
 					<section>
 						<h3>What Specifically Does Meteor Offer Developers?</h3>
-						<p>1. Meteor not only has a one-step installation for configuration and setup, but it also has an isomorphic API, which refers to using the same code on the frontend or backend, or even for mobile and web apps. This saves developers hours, perhaps even days and weeks, since there is no need for developers to wrestle with installing, configuring, and learning disparate libraries, module managers, multifarious APIs, drivers, and the like.</p>
-					</section>
-					<section>
-						<p>2. It offers not only a front-end framework, like Backbone.js, but also a backend that seamlessly integrates with the frontend, and an easy-to-use API for communicating between the two; this provides developers with straightforward, no-fuss client-server data management (Collections, Models, etc.), server-side methods, and server session management. </p>
-					</section>
-					<section>
-						<p>3. It provides not only bidirectional persistent communication (like socket.io), but also simplified reactive programming (like Bacon.js). The reactive programming library works in conjunction with the front-end framework to reactively (that is, instantly and continuously) update the UI whenever dependable data or variables change. Moreover, a Meteor community developer has implemented the Meteor front-end templating engine on the server, providing server side templating for Meteor. I should caution that this implementation is still in its infancy.</p>
-					</section>
-					<section>
-						<p>4. It offers not only a stack that includes MongoDB database (with PostgreSQL and others planned), but also a front-end representation of MongoDB, called Minimongo, written entirely in JavaScript and available in every connected client. Meteor integrates the two (MongoDB on the backend and Minimongo on the frontend) in a well-conceived manner to mitigate latency, a concept called latency compensation. This results in considerably faster page updates and reloads, leading to a more satisfying user experience for developers and end users alike.</p>
-					</section>
-					<section>
-						<p>5. It not only has a standardized Mongo API on both the frontend and backend, but it also has Oplog tailing for MongoDB, resulting in applications using substantially less server resources.</p>
-					</section>
-					<section>
-						<p>6. It has a standard front-end router (created by a Meteor community member) that implements the best features from other popular front-end routers, and this router also provides server side routing and includes a familiar API like Express.js’s routing API, even allowing for connect middleware, RESTful endpoints, and the like.</p>
-					</section>
-					<section>
-						<p>7. It has a lightweight front-end framework, Blaze.js, that has a templating engine that supersedes Handlebars.js, with a rendering engine similar to the WIP (Work in Project) HTMLBars. I should note that Blaze is neither as feature-rich and robust as Ember.js nor as expansive and extensible as Angular.js.</p>
-					</section>
-					<section>
-						<p>8. Its integrated live browser reload (also known as hot code load and hot code push) not only automatically reloads your live web page whenever you make development changes on the frontend (HTML, CSS, images, JavaScript, etc.), but it also automatically refreshes just the necessary DOM elements on the page (without reloading the entire page), even when there are dependent changes to data on the backend (MongoDB) or frontend (Minimongo).</p>
-					</section>
-					<section>
-						<p>9. It comes with requisite core packages to handle minification, preprocessing, concatenation, OAuth and custom user authentication (signup, login, forget password, etc.)., emailing, and coffeescripting; packages for popular frameworks like bootstrap, backbone, and jQuery; and even a package for SEO compatibility.</p>
-					</section>
-					<section>
-						<p>10. It has its own command line tool that provides many of the functionalities provided by tools such as grunt, NPM, NVM, and the like. And if you add EventedMind’s em5 scaffolding tool, you also have some (though not most) of the functionalities provided by popular scaffolding tools prominent in Rails and Yeoman.</p>
-					</section>
-					<section>
-						<p>11. It allows you to use NPM modules and it provides its own build system (a custom package manger) that transcends NPM, providing nearly all the worthwhile and crucial NPM functionalities and more. You can install third-party or custom Meteor packages from atmospherejs.com, the official repository for Meteor packages.</p>
-					</section>
-					<section>
-						<p>12. It uses synchronous style coding, courtesy of the Fibers JavaScript library. This provides an easy to read code structure that many find more appealing than the asynchronous structure of callback functions, common in most JavaScript frameworks. I should caution that you must pay close attention to the section in the road map that deals with making async calls in Meteor because many seem to have trouble when making async calls in Meteor.</p>
-					</section>
-					<section>
-						<p>13. It even provides support for mobile apps through Cordova Phonegap integration. You can easily deploy your Meteor app as a mobile app, using these simple commands:</p>
 						<ul>
-							<li>meteor run ios - runs your Meteor app in an iOS simulator and starts the server.</li>
-							<li>meteor run android - runs your Meteor app in an Android simulator and starts the server.</li>
+							<li>One-step installation for configuration and setup</li>
+							<li>Isomorphic API</li>
+							<li>Integrated frontend and backend</li>
+							<li>Bidirectional persistent communication (like socket.io)</li>
+							<li>Reactivity</li>
+							<li>MongoDB + Minimongo</li>
+							<li>Latency compensation</li>
+							<li>Oplog tailing for MongoDB (less server resources)</li>
 						</ul>
 					</section>
 					<section>
-						<p>14. Meteor takes a proactive approach to security, reportedly with a core developer dedicated to addressing security.</p>
+						<ul>
+							<li>Standard front-end router (familiar API like Express.js’s routing API)</li>
+							<li>Lightweight front-end framework, Blaze.js</li>
+							<li>Hot code load and hot code push</li>
+							<li>Core packages to handle minification, preprocessing, concatenation, OAuth and custom user authentication, emailing, and coffeescripting</li>
+							<li>Meteor tool provides many of the functionalities provided by tools such as grunt, NPM, Yeoman.</li>
+						</ul>
 					</section>
 					<section>
-						<p>15. It has an official testing framework, Velocity,. With Velocity, you can use your favorite testing frameworks like Jasmine or Mocha, and run acceptance tests with Selenium. </p>
+						<ul>
+							<li>Synchronous style coding, courtesy of the Fibers</li>
+							<li>Support for mobile apps through Cordova Phonegap integration</li>
+							<li>Proactive approach to security</li>
+							<li>Official testing framework, Velocity. With Velocity, you can use your favorite testing frameworks like Jasmine or Mocha, and run acceptance tests with Selenium.</li>
+						</ul>
 					</section>
 				</section>
 
